@@ -1,3 +1,4 @@
+// class>slide
 const slide = document.querySelector(".slide");
 let slideWidth = slide.clientWidth;
 

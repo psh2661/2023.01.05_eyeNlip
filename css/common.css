@@ -1,19 +1,12 @@
-/* body{
-  height: 100vh;
+body{
+  /* height: 100vh; */
   position: relative;
-} */
-
+}
 a{
   text-decoration: none;
 }
 .w1280{
   width: 100%;
   max-width: 1280px;
-}
-.p_100{
-  padding: 100px 0;
-}
-.p_bottom100{
-  padding-bottom: 100px;
 }
 
