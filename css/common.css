@@ -10,3 +10,40 @@ a{
   max-width: 1280px;
 }
 
+/* 상품정보 */
+.main_title{
+  padding-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #281713;
+}
+.sub_title{
+  font-size: 0.9375rem;
+  color: #4A271F;
+}
+.capacity{
+  font-size: 0.9375rem;
+  font-weight: 300;
+  color: #4A271F;
+}
+.price{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #BB8377;
+}
+
+/* 버튼 */
+.btn_more{/*자세히보기 버튼*/
+  width: 145px; height: 40px;
+  background-color: rgba(187, 131, 119, 0.6);
+  border: 3px solid #fff;
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+.btn_shop{/*더보기 버튼*/
+  width: 145px; height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #bb8377;
+  border-radius: 100px;
+  box-sizing: border-box;
+}

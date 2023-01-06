@@ -1,10 +1,44 @@
 /* product_slide */
+/* 텍스트,버튼 스타일 */
+.slide_main_tit{
+  color: #fff;
+  padding-bottom: 9px;
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+.slide_sub_tit{
+  color: #fff;
+  padding-bottom: 5px;
+  font-size: 1.875rem;
+  font-weight:500;
+}
+.slide_sub2_tit{
+  color: #fff;
+  padding-bottom: 30px;
+  font-size: 1.25rem;
+  font-weight:400;
+}
+.txt_wrap>a{ /*자세히보기 남은 설정*/
+  display: block;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 34px;
+}
+.txt_wrap>a:hover{/*자세히보기 호버*/
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #bb8377;
+  box-sizing: border-box;
+  color: #bb8377;
+}
+/* product_slide 스타일 */
 .slide {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
   position: relative;
-  width: 100%; height: 100vh;
+  width: 100%; height: auto;
   user-select: none;
 }
 .slide_item {
@@ -41,17 +75,15 @@
 .slide_next_button {
   right: 10px;
 }
-
-
 /* img */
 .slide_item.item1 {
-  background-image: url(../img/product_slide/product_slide01.jpg);
-  background-position: top center;
+  background-image: url(../img/product_slide/top_main_1920.jpg);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .slide_item.item2 {
-  background-image: url(../img/product_slide/product_slide02.jpg);
+  background-image: url(../img/product_slide/top_main2_1920.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,38 +94,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 /* 페이지네이션 스타일 */
-ul,
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
 .slide_pagination {
-  /* layout */
   display: flex;
-  gap: 5px;
-
-  /* position */
+  gap: 10px;
   position: absolute;
   bottom: 0;
-  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
   left: 50%;
   transform: translateX(-50%);
 }
 .slide_pagination > li {
   /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-  color: #7fb5ff88;
+  color: #fff;
   cursor: pointer;
   font-size: 25px;
 }
 .slide_pagination > li.active {
   /* 현재 슬라이드 색상은 투명도 없이 */
-  color: #7fb5ff;
+  color: #bb8377;
 }
-
 .slide_item_duplicate {
   display: flex;
   align-items: center;
@@ -101,7 +120,7 @@ li {
   position: relative;
   left: 0px;
   width: 100%;
-  height: 300px;
+  height: 500px;
   flex-shrink: 0;
   transition: left 0.01s;
 }
