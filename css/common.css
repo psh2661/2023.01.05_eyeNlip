@@ -7,4 +7,7 @@ body{
   max-width: 1280px;
   margin: 0 auto;
 }
+.p_top20{
+  padding-top: 20px;
+}
 /* common end */
