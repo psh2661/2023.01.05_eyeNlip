@@ -22,3 +22,11 @@
   box-sizing: border-box;
   color: #9F4430;
 }
+.top_logo{
+display: block;
+width: 200px;
+height: 100px;
+}
+.top_logo>img{
+  width: 100%;
+}
