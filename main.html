@@ -13,21 +13,13 @@
   <title>eyeNlip::아이앤립</title>
 </head>
 <body>
-  <header>
+  <header class="scroll_01">
     <article class="w1280">
       <nav class="p_top20 top_nav">
         <div class="lang_wrap">
           <img src="img/icon/language_wh.png" alt="언어">
-          <a class="nav_ft_16" href="#">한국어</a>
-          <a class="nav_ft_16" href="#">日本語</a>
-        </div>
-        <div class="info_wrap">
-          <ul>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">JOIN</a></li>
-            <li><a href="#">CART</a></li>
-            <li><a href="#">MY PAGE</a></li>
-          </ul>
+          <a href="#">한국어</a>
+          <a href="#">日本語</a>
         </div>
       </nav>
 
@@ -36,19 +28,19 @@
           <a class="top_logo" href="#">
             <img src="img/logo/logo_w.png" alt="아이앤립로고">
           </a>
-          <ul class="gnb_wrap">
-            <li class="list">
-              <a href="">브랜드</a>
+          <ul class="menu">
+            <li class="brand_menu">
+              <a class="main_menu" href="#">브랜드</a>
             </li>
-            <li class="list">
-              <a href="">제품</a>
-              <div class="sub_category1">
-                <ul>
+            <li class="product_menu">
+              <a class="main_menu" href="#">제품</a>
+              <div class="submenu_wrap">
+                <ul class="submenu">
                   <li><a href="">ALL</a></li>
                   <li><a href="">BEST</a></li>
                   <li><a href="">SALE</a></li>
                 </ul>
-                <ul>
+                <ul class="submenu">
                   <p>유형별</p>
                   <li><a href="">클렌징</a></li>
                   <li><a href="">스킨케어</a></li>
@@ -56,7 +48,7 @@
                   <li><a href="">선케어</a></li>
                   <li><a href="">세트상품</a></li>
                 </ul>
-                <ul>
+                <ul class="submenu">
                   <p>피부고민별</p>
                   <li><a href="">트러블,진정</a></li>
                   <li><a href="">미백,광채</a></li>
@@ -64,7 +56,7 @@
                   <li><a href="">수분,보습</a></li>
                   <li><a href="">모공,각질</a></li>
                 </ul>
-                <ul>
+                <ul class="submenu">
                   <p>라인별</p>
                   <li><a href="">비건</a></li>
                   <li><a href="">사몬</a></li>
@@ -73,31 +65,67 @@
                 </ul>
               </div>
             </li>
-            <li class="list">
-              <a href="">이벤트</a>
+            <li class="event_menu">
+              <a class="main_menu" href="#">이벤트</a>
             </li>
-            <li class="list">
-              <a href="">리뷰</a>
+            <li class="review_menu">
+              <a class="main_menu" href="#">리뷰</a>
             </li>
-            <li class="list">
-              <a href="">커뮤니티</a>
-              <div class="sub_category2">
-                <ul>
-                  <li><a href="">공지사항</a></li>
-                  <li><a href="">FAQ</a></li>
-                  <li><a href="">1:1문의</a></li>
-                  <li><a href="">회원등급안내</a></li>
-                  <li><a href="">제휴문의</a></li>
-                </ul>
-              </div>
+            <li class="Community_menu">
+              <a class="main_menu" href="#">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="">공지사항</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">1:1문의</a></li>
+                <li><a href="">회원등급안내</a></li>
+                <li><a href="">제휴문의</a></li>
+              </ul>
             </li>
           </ul>
+          <div class="info_wrap">
+            <ul>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">JOIN</a></li>
+              <li class="mypage"><a href="#"><img src="img/icon/mypage_wh.png" alt="마이페이지"></a></li>
+              <li  class="shopping_bag"><a href="#"><img src="img/icon/shopping-bag.png" alt="장바구니"></a></li>
+            </ul>
+            <div class="search">
+              <img src="img/icon/search_wh.png" alt="검색창">
+              <!-- <form action="." method="post">
+                <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
+                <button class="search-btn" type="submit">찾기</button>
+              </form> -->
+            </div>
+          </div>
         </div>
       </nav>
     </article>
   </header>
 
-  <main></main>
+  <main>
+    <!-- product_slide -->
+    <section class="product_slide">
+      <div class="product_slide01"></div>
+    </section>
+
+    <!-- new_product -->
+    <section class="new_product"></section>
+
+    <!-- best_product -->
+    <section class="best_product"></section>
+
+    <!-- pop_banner01 -->
+    <section class="pop_banner01"></section>
+
+    <!-- event_product -->
+    <section class="event_product"></section>
+
+    <!-- pop_banner02 -->
+    <section class="pop_banner02"></section>
+    
+    <!-- sns_review -->
+    <section class="sns_review"></section>
+  </main>
 
   <footer></footer>
 </body>

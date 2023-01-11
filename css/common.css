@@ -2,6 +2,10 @@
 body{
   background-color: bisque;
 }
+section{
+  width: 100%;
+  height: 100vh;
+}
 .w1280{
   width: 100%;
   max-width: 1280px;
