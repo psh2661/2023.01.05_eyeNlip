@@ -2,11 +2,162 @@
   width: 100%;
   height: 100vh;
 }
-.product_slide01{
+/* .product_slide01{
   width: 100%; height: 100vh;
   display: inline-block;
   background-image: url(../img/product_slide/product_slide01.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+.slide {
+  /* layout */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  /* size */
+  width: 100%;
+  user-select: none;
+}
+.slide_item {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
+  position: relative;
+  left: 0px;
+
+  /* size */
+  width: 100%;
+  height: 300px;
+  /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
+  flex-shrink: 0;
+
+  /* transition */
+  transition: left 0.15s;
+}
+.slide_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  cursor: pointer;
+  /* slide_prev_button 백그라운드 이미지 설정 */
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+  background-position: center center;
+}
+.slide_prev_button {
+  left: 20px;
+  background-image: url(../img/icon/left_rd.png);
+}
+.slide_prev_button>img{
+  display: inline-block;
+  width: 30px; height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.slide_prev_button>img.new_img_fadeout{
+  opacity: 0;
+}
+.slide_next_button {
+  right: 20px;
+  background-image: url(../img/icon/right_rd.png);
+}
+.slide_next_button>img{
+  display: inline-block;
+  width: 30px; height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.slide_next_button>img.new_img_fadeout{
+  opacity: 0;
+}
+/* 슬라이드 내용 */
+.slide_txt_wrap{
+  padding-top: 250px;
+}
+.slide_txt_wrap>h2{
+  color: #fff;
+  font-size: 60px;
+}
+.slide_txt_wrap>h3{
+  padding-top: 10px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 300;
+}
+.slide_txt_wrap>p{
+  padding-top: 5px;
+  color: #fff;
+  font-size: 25px;
+}
+.slide_item.item1 {
+  width: 100%; height: 100vh;
+  display: inline-block;
+  background-image: url(../img/product_slide/top_main_1920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slide_item.item2 {
+  width: 100%; height: 100vh;
+  display: inline-block;
+  background-image: url(../img/product_slide/top_main2_1920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide_item.item3 {
+  width: 100%; height: 100vh;
+  display: inline-block;
+  background-image: url(../img/product_slide/product_slide03.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 페이지네이션 스타일 */
+.slide_pagination {
+  /* layout */
+  display: flex;
+  gap: 10px;
+
+  /* position */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide_pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+}
+.slide_pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #9F4430;
+}
+
+.slide_item_duplicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  transition: left 0.1s ease;
 }

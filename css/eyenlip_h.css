@@ -55,6 +55,10 @@
   font-weight: bold;
   line-height: 40px;
 }
+.main_menu:hover {
+  color: #fff;
+  transition: 250ms ease-out;
+}
 .main_menu:after {/*after 가상요소*/
   display:block;
   width:100%;
@@ -64,16 +68,66 @@
   transition: transform 250ms ease-in-out;
 }
 .main_menu:hover:after {
-  color: #fff;
+  /* color: #fff; */
   transform: scaleX(1);/*a 속성에 hover시 기존 크기로*/
 }
 
 /* 서브메뉴 */
-.submenu_wrap{
-  display: none;
+.submenu_wrap01{
+  position: absolute;
+  background-color: #fff;
+  justify-content: flex-end;
+  width: 100%; height: auto;
+  left: 0;
 }
-.submenu{
-  display: none;
+.submenu_wnw{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px 0;
+}
+.submenu01{
+  text-align: left;
+  min-width: 150px;
+}
+.product_all>li>a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #9F4430;
+  line-height: 40px
+}
+.product_type01>p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #9F4430;
+  line-height: 40px
+}
+.product_type01>li>a{
+  font-weight: 500;
+  color: #1d1d1d;
+  line-height: 40px
+}
+.product_type02>p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #9F4430;
+  line-height: 40px
+}
+.product_type02>li>a{
+  font-weight: 500;
+  color: #1d1d1d;
+  line-height: 40px
+}
+.product_line>p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #9F4430;
+  line-height: 40px
+}
+.product_line>li>a{
+  font-weight: 500;
+  color: #1d1d1d;
+  line-height: 40px
 }
 
 
