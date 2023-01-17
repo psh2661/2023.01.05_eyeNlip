@@ -1,37 +1,33 @@
-$(document).ready(function() {
-  var gnb = $('#gnb');
+let gnb = document.querySelector('#gnb');
+let gnb_bg = document.querySelector('#gnb');
+let lnb01 = document.querySelectorAll('.lnb01');
+let lnb02 = document.querySelectorAll('.lnb02');
+console.log(lnb);
 
-  // 마우스 over 시
-  gnb.mouseenter(function() {
-    $('.inner_menu').show();
-    // menu bg
-    var menuHeight = $('#header').outerHeight();
-    var inmeHegiht = $('.inner_menu').outerHeight();
-    $('.hd_bg').css({
-      'top': menuHeight + 'px',
-      height: inmeHegiht + 'px'
-    });
-  });
-
-  // 마우스  leave 시
-  gnb.mouseleave(function() {
-    $('.inner_menu').hide();
-    $('.hd_bg').css('height', '0')
-
-  });
-
-  //dept2 hover시 dept1 active
-  $('.dept1').mouseenter(function() {
-    $(this).children().addClass('active');
-    $(this).siblings().children().removeClass('active')
-  });
-  $('.dept1').mouseleave(function() {
-    $(this).children().removeClass('active');
-  });
-  
-  /* 햄버거 메뉴 */
-  $('.menu_bar').click(function(){
-    $(this).toggleClass('active');
-    $('.menu_open').slideToggle();
-  });
-});
+// 마우스를 올렸을때
+gnb.addEventListener('mouseenter',()=>{
+  gnb_bg.style.height = '250px';
+  for(i=0; i<lnb01.length; i++){
+    lnb01[i].style.display = 'block';
+  }
+})
+// 마우스를 떼었을때
+gnb.addEventListener('mouseleave',()=>{
+  gnb_bg.style.height = '0px';
+  for(i=0; i<lnb01.length; i++){
+    lnb01[i].style.display = 'none';
+  }
+})
+gnb.addEventListener('mouseenter',()=>{
+  gnb_bg.style.height = '250px';
+  for(i=0; i<lnb02.length; i++){
+    lnb02[i].style.display = 'block';
+  }
+})
+// 마우스를 떼었을때
+gnb.addEventListener('mouseleave',()=>{
+  gnb_bg.style.height = '0px';
+  for(i=0; i<lnb02.length; i++){
+    lnb02[i].style.display = 'none';
+  }
+})
