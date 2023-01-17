@@ -2,15 +2,6 @@
   width: 100%;
   height: 100vh;
 }
-/* .product_slide01{
-  width: 100%; height: 100vh;
-  display: inline-block;
-  background-image: url(../img/product_slide/product_slide01.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .slide {
   /* layout */
   display: flex;
@@ -36,7 +27,6 @@
   height: 300px;
   /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
   flex-shrink: 0;
-
   /* transition */
   transition: left 0.15s;
 }
@@ -96,10 +86,24 @@
   font-weight: 300;
 }
 .slide_txt_wrap>p{
-  padding-top: 5px;
+  padding: 5px 0 50px 0;
   color: #fff;
   font-size: 25px;
 }
+.slide_txt_wrap>a{
+  padding: 10px 30px;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  background-color: rgba(225, 225, 225, 0.5);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.slide_txt_wrap>a:hover{
+  background-color: #E1755E;
+}
+/* 슬라이드 배경 */
 .slide_item.item1 {
   width: 100%; height: 100vh;
   display: inline-block;
@@ -108,8 +112,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 .slide_item.item2 {
   width: 100%; height: 100vh;
   display: inline-block;
@@ -160,4 +162,39 @@
   height: 300px;
   flex-shrink: 0;
   transition: left 0.1s ease;
+}
+/* ============================================ */
+/* new_product */
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide>ul{
+  display: flex;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

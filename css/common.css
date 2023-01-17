@@ -1,6 +1,8 @@
 /* common */
-body{
-  background-color: bisque;
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 section{
   width: 100%;

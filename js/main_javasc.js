@@ -214,3 +214,12 @@ let newPro = document.querySelectorAll('.slide_button>img');
     newPro[i].classList.remove('new_img_fadeout');
     });
 }
+
+// ============
+// new_product
+var swiper = new Swiper(".mySwiper", {
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+});
